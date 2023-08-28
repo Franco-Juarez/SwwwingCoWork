@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "nombre": "Casa en la Playa",
+      "ubicacion": "Playa",
+      "tipo": "Casa",
+      "precio": 350000,
+      "descripcion": "Hermosa casa cerca de la playa con vista al mar."
+    },
+    {
+      "id": 2,
+      "nombre": "Apartamento en la Ciudad",
+      "ubicacion": "Ciudad",
+      "tipo": "Apartamento",
+      "precio": 200000,
+      "descripcion": "Amplio apartamento en el centro de la ciudad."
+    },
+    {
+      "id": 3,
+      "nombre": "Casa en las Montañas",
+      "ubicacion": "Montañas",
+      "tipo": "Casa",
+      "precio": 280000,
+      "descripcion": "Casa con encanto en las montañas con vistas panorámicas."
+    },
+    {
+      "id": 4,
+      "nombre": "Apartamento en la Playa",
+      "ubicacion": "Playa",
+      "tipo": "Apartamento",
+      "precio": 180000,
+      "descripcion": "Apartamento moderno a pocos pasos de la playa."
+    },
+    {
+      "id": 5,
+      "nombre": "Casa en el Bosque",
+      "ubicacion": "Bosque",
+      "tipo": "Casa",
+      "precio": 320000,
+      "descripcion": "Casa rodeada de naturaleza en un entorno tranquilo."
+    },
+    {
+      "id": 6,
+      "nombre": "Casa en el Centro de la Ciudad",
+      "ubicacion": "Centro",
+      "tipo": "Casa",
+      "precio": 420000,
+      "descripcion": "Amplia casa ubicada en el corazón de la ciudad."
+    },
+    {
+      "id": 7,
+      "nombre": "Apartamento con Vistas al Mar",
+      "ubicacion": "Playa",
+      "tipo": "Apartamento",
+      "precio": 250000,
+      "descripcion": "Moderno apartamento con vistas al mar"
+    },
+    {
+      "id": 8,
+      "nombre": "Villa en el Campo",
+      "ubicacion": "Campo",
+      "tipo": "Villa",
+      "precio": 550000,
+      "descripcion": "Espléndida villa rodeada de amplios jardines y paisajes campestres."
+    },
+    {
+      "id": 9,
+      "nombre": "Apartamento en Centro Histórico",
+      "ubicacion": "Centro Histórico",
+      "tipo": "Apartamento",
+      "precio": 320000,
+      "descripcion": "Encantador apartamento en el centro histórico de la ciudad."
+    },
+    {
+      "id": 10,
+      "nombre": "Chalet en la Montaña",
+      "ubicacion": "Montañas",
+      "tipo": "Chalet",
+      "precio": 480000,
+      "descripcion": "Elegante chalet en las montañas con vistas panorámicas."
+    },
+    {
+      "id": 11,
+      "nombre": "Apartamento en Rascacielos",
+      "ubicacion": "Centro",
+      "tipo": "Apartamento",
+      "precio": 750000,
+      "descripcion": "Exclusivo apartamento en un rascacielos."
+    },
+    {
+      "id": 12,
+      "nombre": "Casa junto al Lago",
+      "ubicacion": "Lago",
+      "tipo": "Casa",
+      "precio": 380000,
+      "descripcion": "Acogedora casa situada a orillas de un hermoso lago."
+    }
+  ]
+  
