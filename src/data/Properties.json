@@ -5,7 +5,7 @@
       "descripcion": "Moderna oficina ejecutiva en el corazón de Midtown Manhattan.",
       "precio": 5500,
       "ubicacion": "Midtown Manhattan",
-      "image":"../assets/officesImgs/office1.jpg"
+      "image":"officesImgs/office1.jpg"
     },
     {
       "id": 2,
@@ -13,7 +13,7 @@
       "descripcion": "Amplio loft de diseño en el trendy barrio de Williamsburg, Brooklyn. Perfecto para startups creativas.",
       "precio": 7500,
       "ubicacion": "Williamsburg, Brooklyn",
-      "image":"../assets/officesImgs/office2.jpg"
+      "image":"officesImgs/office2.jpg"
     },
     {
       "id": 3,
@@ -21,7 +21,7 @@
       "descripcion": "Oficina con vistas espectaculares a Central Park. Ubicación premium en el Upper West Side.",
       "precio": 10500,
       "ubicacion": "Upper West Side",
-      "image":"../assets/officesImgs/office3.jpg"
+      "image":"src/assets/officesImgs/office3.jpg"
     },
     {
       "id": 4,
@@ -29,7 +29,7 @@
       "descripcion": "Espacio de trabajo compartido en el Financial District. Ideal para emprendedores y freelancers.",
       "precio": 3500,
       "ubicacion": "Financial District",
-      "image":"../assets/officesImgs/office11.jpg"
+      "image":"src/assets/officesImgs/office11.jpg"
     },
     {
       "id": 5,
@@ -37,7 +37,7 @@
       "descripcion": "Suite ejecutiva de lujo en el nuevo desarrollo de Hudson Yards. Vistas panorámicas impresionantes.",
       "precio": 9500,
       "ubicacion": "Hudson Yards",
-      "image":"../assets/officesImgs/office4.jpg"
+      "image":"src/assets/officesImgs/office4.jpg"
     },
     {
       "id": 6,
@@ -45,7 +45,7 @@
       "descripcion": "Oficina recién renovada en el animado barrio de Harlem. Espacio perfecto para una pequeña empresa.",
       "precio": 3200,
       "ubicacion": "Harlem",
-      "image":"../assets/officesImgs/office5.jpg"
+      "image":"src/assets/officesImgs/office5.jpg"
     },
     {
       "id": 7,
@@ -53,7 +53,7 @@
       "descripcion": "Espacio de coworking con vistas al puente de Brooklyn. Ambiente creativo y colaborativo.",
       "precio": 4200,
       "ubicacion": "DUMBO, Brooklyn",
-      "image":"../assets/officesImgs/office6.jpg"
+      "image":"src/assets/officesImgs/office6.jpg"
     },
     {
       "id": 8,
@@ -61,7 +61,7 @@
       "descripcion": "Amplia oficina corporativa en Queens con fácil acceso al transporte público.",
       "precio": 5800,
       "ubicacion": "Queens",
-      "image":"../assets/officesImgs/office7.jpg"
+      "image":"src/assets/officesImgs/office7.jpg"
     },
     {
       "id": 9,
@@ -69,7 +69,7 @@
       "descripcion": "Oficina con terraza privada en el distrito de arte de Chelsea. Ideal para empresas de diseño.",
       "precio": 8900,
       "ubicacion": "Chelsea",
-      "image":"../assets/officesImgs/office8.jpg"
+      "image":"src/assets/officesImgs/office8.jpg"
     },
     {
       "id": 10,
@@ -77,7 +77,7 @@
       "descripcion": "Oficina virtual en el elegante barrio de Tribeca. Servicios de recepción y dirección comercial incluidos.",
       "precio": 1500,
       "ubicacion": "Tribeca",
-      "image":"../assets/officesImgs/office9.jpg"
+      "image":"src/assets/officesImgs/office9.jpg"
     },
     {
       "id": 11,
@@ -85,7 +85,7 @@
       "descripcion": "Espacio de oficina industrial en ascenso en Long Island City.",
       "precio": 4800,
       "ubicacion": "Long Island City",
-      "image":"../assets/officesImgs/office10.jpg"
+      "image":"src/assets/officesImgs/office10.jpg"
     },
     {
       "id": 12,
@@ -93,7 +93,7 @@
       "descripcion": "Oficina boutique en el icónico barrio de SoHo. Diseño elegante y ambiente exclusivo.",
       "precio": 6900,
       "ubicacion": "SoHo",
-      "image":"../assets/officesImgs/office11.jpg"
+      "image":"src/assets/officesImgs/office11.jpg"
     }
   ]
   
