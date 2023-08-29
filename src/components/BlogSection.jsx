@@ -1,5 +1,9 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { HStack, Heading, VStack, Link, Box, Image, Text, Divider } from "@chakra-ui/react";
+import office1 from "../assets/blogSectionImg/1.jpg"
+import office2 from "../assets/blogSectionImg/2.jpg"
+import office3 from "../assets/blogSectionImg/3.jpg"
+import office4 from "../assets/blogSectionImg/4.jpg"
 
 const BlogSection = () => {
   return (
@@ -19,59 +23,59 @@ const BlogSection = () => {
       </HStack>
       <HStack gap={8} pt={12} w={"100%"} alignItems={"flex-start"} justifyContent={"space-between"}>
         <VStack w={"50%"} justifyContent={"space-between"}  alignItems={"flex-start"}> 
-          <Image borderRadius={20} src='https://picsum.photos/id/164/600/300' alt='House Photo' />
+          <Image borderRadius={20} src={office1} alt='House Photo' />
           <Text>
-            August 20, 2023
+            August 22, 2023
           </Text>
           <Heading fontSize={"1.5rem"}>
-            Unlocking Opportunities in<br/> Real Estate Bussiness 
+            The Rise of Coworking Spaces 
           </Heading>
           <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam id iste labore officiis in beatae, provident cumque? Earum sapiente quaerat culpa praesentium repellat qui aperiam laborum autem temporibus ab!
+            Explore the growth and evolution of coworking spaces and how they are changing the traditional office landscape.
           </Text>
         </VStack>
-        <VStack gap={4} justifyContent={"space-between"} w={"50%"} alignItems={"flex-start"}>
+        <VStack gap={3} justifyContent={"space-between"} w={"50%"} alignItems={"flex-start"}>
           <HStack alignItems={"flex-start"}>
-            <Image pr={2} borderRadius={20} src='https://picsum.photos/id/299/200/100' alt='House Photo' />
+            <Image w={"30%"} pr={2} borderRadius={20} src={office2} alt='House Photo' />
             <Box>
               <Text>
-                August 20, 2023
+                August 18, 2023
               </Text>
               <Heading fontSize={"1rem"}>
-              Unlocking Opportunities in<br /> Real Estate Bussiness 
+                Office Design Trends for Productivity
               </Heading>
               <Text>
-                The real estate industry is more than just buying and selling properties; it's about unlocking opportunities.
+                Delve into the latest office design trends that boost productivity and create a conducive work environment.
               </Text>
             </Box>
           </HStack>
           <Divider />
           <HStack alignItems={"flex-start"}>
-            <Image pr={2} borderRadius={20} src='https://picsum.photos/id/315/200/100' alt='House Photo' />
+            <Image w={"30%"} pr={2} borderRadius={20} src={office3} alt='House Photo' />
             <Box>
               <Text>
-                August 20, 2023
+                August 15, 2023
               </Text>
               <Heading fontSize={"1rem"}>
-              Unlocking Opportunities in<br /> Real Estate Bussiness 
+                Remote Job Interviews: Nailing the Virtual Meeting
               </Heading>
               <Text>
-                The real estate industry is more than just buying and selling properties; it's about unlocking opportunities.
+                Provide insights into acing remote job interviews and showcasing employability skills online.
               </Text>
             </Box>
           </HStack>
           <Divider />
           <HStack alignItems={"flex-start"}>
-            <Image pr={2} borderRadius={20} src='https://picsum.photos/id/372/200/100' alt='House Photo' />
+            <Image w={"30%"} pr={2} borderRadius={20} src={office4} alt='House Photo' />
             <Box>
               <Text>
-                August 20, 2023
+                July 18, 2023
               </Text>
               <Heading fontSize={"1rem"}>
-              Unlocking Opportunities in<br /> Real Estate Bussiness 
+                Strategies for Boosting Productivity
               </Heading>
               <Text>
-                The real estate industry is more than just buying and selling properties; it's about unlocking opportunities.
+              Explore effective techniques for combating procrastination and maximizing productivity in shared workspaces.
               </Text>
             </Box>
           </HStack>

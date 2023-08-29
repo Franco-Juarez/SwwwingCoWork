@@ -1,18 +1,18 @@
 import { VStack, Image, Box, Icon, Button, Heading, Text, Link, Flex, GridItem } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { AiOutlineHeart } from "react-icons/ai";
-import houseImage  from "../assets/houseImage.png";
+
 
 
 
 // eslint-disable-next-line react/prop-types
-const PropertiesCards = ({propertyName, propertyPrice, propertyLocation, propertydescripcion}) => {
+const PropertiesCards = ({propertyName, propertyPrice, propertyLocation, propertydescripcion, propertyImage}) => {
 
   return (
     <GridItem>
-      <VStack px={2} pb={8} alignItems={"flex-start"} boxShadow='md' rounded='md' w={"100%"}>
+      <VStack minH={"520px"} px={2} pb={8} alignItems={"flex-start"} boxShadow='md' rounded='md' w={"100%"} justifyContent={"space-between"}>
         <Box position={"relative"}>
-          <Image borderRadius={20} src={houseImage} />
+          <Image objectFit={"cover"} w={"100%"} h={"200px"} borderRadius={20} src={propertyImage} />
           <Icon mr={2} mt={2} borderRadius={"50%"} p={2} backgroundColor={"whiteAlpha.900"} fontSize={"2rem"}  right={0} top={0} zIndex={9999} position={"absolute"} as={AiOutlineHeart}></Icon>
         </Box>
         <Flex py={2} gap={2}>

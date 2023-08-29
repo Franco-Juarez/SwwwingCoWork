@@ -26,7 +26,7 @@ const PropertiesSection = () => {
         {
           properties.map(property =>
           {
-            return <PropertiesCards key={property.id} propertydescripcion = {property.descripcion} propertyPrice = {property.precio} propertyLocation = {property.ubicacion} propertyName = {property.nombre} />
+            return <PropertiesCards key={property.id} propertydescripcion = {property.descripcion} propertyImage = {property.image} propertyPrice = {property.precio} propertyLocation = {property.ubicacion} propertyName = {property.nombre} />
           })
         }
       </Grid>

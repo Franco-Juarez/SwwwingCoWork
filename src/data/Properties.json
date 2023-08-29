@@ -1,99 +1,99 @@
 [
     {
       "id": 1,
-      "nombre": "Casa en la Playa",
-      "ubicacion": "Playa",
-      "tipo": "Casa",
-      "precio": 350000,
-      "descripcion": "Hermosa casa cerca de la playa con vista al mar."
+      "nombre": "Oficina Ejecutiva en Midtown",
+      "descripcion": "Moderna oficina ejecutiva en el corazón de Midtown Manhattan.",
+      "precio": 5500,
+      "ubicacion": "Midtown Manhattan",
+      "image":"src/assets/officesImgs/office1.jpg"
     },
     {
       "id": 2,
-      "nombre": "Apartamento en la Ciudad",
-      "ubicacion": "Ciudad",
-      "tipo": "Apartamento",
-      "precio": 200000,
-      "descripcion": "Amplio apartamento en el centro de la ciudad."
+      "nombre": "Loft de Diseño en Williamsburg",
+      "descripcion": "Amplio loft de diseño en el trendy barrio de Williamsburg, Brooklyn. Perfecto para startups creativas.",
+      "precio": 7500,
+      "ubicacion": "Williamsburg, Brooklyn",
+      "image":"src/assets/officesImgs/office2.jpg"
     },
     {
       "id": 3,
-      "nombre": "Casa en las Montañas",
-      "ubicacion": "Montañas",
-      "tipo": "Casa",
-      "precio": 280000,
-      "descripcion": "Casa con encanto en las montañas con vistas panorámicas."
+      "nombre": "Oficina con vista a Central Park",
+      "descripcion": "Oficina con vistas espectaculares a Central Park. Ubicación premium en el Upper West Side.",
+      "precio": 10500,
+      "ubicacion": "Upper West Side",
+      "image":"src/assets/officesImgs/office3.jpg"
     },
     {
       "id": 4,
-      "nombre": "Apartamento en la Playa",
-      "ubicacion": "Playa",
-      "tipo": "Apartamento",
-      "precio": 180000,
-      "descripcion": "Apartamento moderno a pocos pasos de la playa."
+      "nombre": "Oficina Compartida",
+      "descripcion": "Espacio de trabajo compartido en el Financial District. Ideal para emprendedores y freelancers.",
+      "precio": 3500,
+      "ubicacion": "Financial District",
+      "image":"src/assets/officesImgs/office11.jpg"
     },
     {
       "id": 5,
-      "nombre": "Casa en el Bosque",
-      "ubicacion": "Bosque",
-      "tipo": "Casa",
-      "precio": 320000,
-      "descripcion": "Casa rodeada de naturaleza en un entorno tranquilo."
+      "nombre": "Suite Ejecutiva en Hudson Yards",
+      "descripcion": "Suite ejecutiva de lujo en el nuevo desarrollo de Hudson Yards. Vistas panorámicas impresionantes.",
+      "precio": 9500,
+      "ubicacion": "Hudson Yards",
+      "image":"src/assets/officesImgs/office4.jpg"
     },
     {
       "id": 6,
-      "nombre": "Casa en el Centro de la Ciudad",
-      "ubicacion": "Centro",
-      "tipo": "Casa",
-      "precio": 420000,
-      "descripcion": "Amplia casa ubicada en el corazón de la ciudad."
+      "nombre": "Oficina en Harlem",
+      "descripcion": "Oficina recién renovada en el animado barrio de Harlem. Espacio perfecto para una pequeña empresa.",
+      "precio": 3200,
+      "ubicacion": "Harlem",
+      "image":"src/assets/officesImgs/office5.jpg"
     },
     {
       "id": 7,
-      "nombre": "Apartamento con Vistas al Mar",
-      "ubicacion": "Playa",
-      "tipo": "Apartamento",
-      "precio": 250000,
-      "descripcion": "Moderno apartamento con vistas al mar"
+      "nombre": "Espacio de Coworking en DUMBO",
+      "descripcion": "Espacio de coworking con vistas al puente de Brooklyn. Ambiente creativo y colaborativo.",
+      "precio": 4200,
+      "ubicacion": "DUMBO, Brooklyn",
+      "image":"src/assets/officesImgs/office6.jpg"
     },
     {
       "id": 8,
-      "nombre": "Villa en el Campo",
-      "ubicacion": "Campo",
-      "tipo": "Villa",
-      "precio": 550000,
-      "descripcion": "Espléndida villa rodeada de amplios jardines y paisajes campestres."
+      "nombre": "Oficina Corporativa en Queens",
+      "descripcion": "Amplia oficina corporativa en Queens con fácil acceso al transporte público.",
+      "precio": 5800,
+      "ubicacion": "Queens",
+      "image":"src/assets/officesImgs/office7.jpg"
     },
     {
       "id": 9,
-      "nombre": "Apartamento en Centro Histórico",
-      "ubicacion": "Centro Histórico",
-      "tipo": "Apartamento",
-      "precio": 320000,
-      "descripcion": "Encantador apartamento en el centro histórico de la ciudad."
+      "nombre": "Oficina con Terraza en Chelsea",
+      "descripcion": "Oficina con terraza privada en el distrito de arte de Chelsea. Ideal para empresas de diseño.",
+      "precio": 8900,
+      "ubicacion": "Chelsea",
+      "image":"src/assets/officesImgs/office8.jpg"
     },
     {
       "id": 10,
-      "nombre": "Chalet en la Montaña",
-      "ubicacion": "Montañas",
-      "tipo": "Chalet",
-      "precio": 480000,
-      "descripcion": "Elegante chalet en las montañas con vistas panorámicas."
+      "nombre": "Oficina Virtual en Tribeca",
+      "descripcion": "Oficina virtual en el elegante barrio de Tribeca. Servicios de recepción y dirección comercial incluidos.",
+      "precio": 1500,
+      "ubicacion": "Tribeca",
+      "image":"src/assets/officesImgs/office9.jpg"
     },
     {
       "id": 11,
-      "nombre": "Apartamento en Rascacielos",
-      "ubicacion": "Centro",
-      "tipo": "Apartamento",
-      "precio": 750000,
-      "descripcion": "Exclusivo apartamento en un rascacielos."
+      "nombre": "Oficina Industrial en Long Island",
+      "descripcion": "Espacio de oficina industrial en ascenso en Long Island City.",
+      "precio": 4800,
+      "ubicacion": "Long Island City",
+      "image":"src/assets/officesImgs/office10.jpg"
     },
     {
       "id": 12,
-      "nombre": "Casa junto al Lago",
-      "ubicacion": "Lago",
-      "tipo": "Casa",
-      "precio": 380000,
-      "descripcion": "Acogedora casa situada a orillas de un hermoso lago."
+      "nombre": "Oficina Boutique en SoHo",
+      "descripcion": "Oficina boutique en el icónico barrio de SoHo. Diseño elegante y ambiente exclusivo.",
+      "precio": 6900,
+      "ubicacion": "SoHo",
+      "image":"src/assets/officesImgs/office11.jpg"
     }
   ]
   

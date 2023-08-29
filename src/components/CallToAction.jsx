@@ -1,4 +1,4 @@
-import { Button, VStack, Heading } from "@chakra-ui/react";
+import { Button, VStack, Heading, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, Portal, PopoverArrow, PopoverCloseButton  } from "@chakra-ui/react";
 import ctaImg from "../assets/ctaBg.png";
 
 const CallToActionSection = () => {
@@ -6,7 +6,21 @@ const CallToActionSection = () => {
     <VStack backgroundPosition={"top"} backgroundRepeat={"no-repeat"} backgroundSize={"cover"} backgroundImage={ctaImg} gap={8} alignItems={"flex-start"} p={12} >
       <Heading fontWeight={"400"} textTransform={"uppercase"} fontSize={"1rem"}>Find Home With Us</Heading>
       <Heading>Find The Right House Over <br /> 40,000 property options</Heading>
-      <Button px={8} borderRadius={"15px"} backgroundColor={"blackAlpha.900"} color={"whiteAlpha.900"}>Find Now</Button>
+      <Popover> 
+          <PopoverTrigger>
+          <Button _hover={{ bg: 'mainColor', color:"blackAlpha.900" }} px={8} borderRadius={"15px"} backgroundColor={"blackAlpha.900"} color={"whiteAlpha.900"}>Find Now</Button>
+          </PopoverTrigger>
+          <Portal>
+            <PopoverContent>
+              <PopoverArrow />
+              <PopoverHeader>Header</PopoverHeader>
+              <PopoverCloseButton />
+              <PopoverBody>
+                <Button colorScheme='blue'>Button</Button>
+              </PopoverBody>
+            </PopoverContent>
+          </Portal>
+        </Popover>
     </VStack>
   )
 }

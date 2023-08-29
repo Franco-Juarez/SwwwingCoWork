@@ -1,6 +1,5 @@
 import { Heading, VStack, Text, Grid, GridItem, Icon } from "@chakra-ui/react"
-import { PiCoffeeFill } from "react-icons/pi";
-import { GiTie, GiDesk } from "react-icons/gi";
+import { FaBuilding, FaPrint, FaMugHot } from "react-icons/fa6";
 
 const AboutUsSection = () => {
   return (
@@ -14,30 +13,30 @@ const AboutUsSection = () => {
       </VStack>
       <Grid pb={8} pt={20} templateColumns='repeat(3, 1fr)' gap={10}>
           <GridItem p={4} boxShadow='md' rounded='md' w='100%'>
-            <Icon fontSize={"2rem"} as={GiTie} />
+            <Icon color={"mainColor"} fontSize={"4rem"} as={FaBuilding} />
             <Heading pt={4} w={"100%"} textAlign={"left"} fontSize={"1.2rem"}>
-              Find your Dream House
+              Find your ideal office
             </Heading>
             <Text pt={2}>
-            Swwwing-State utilizes advanced algorithms and expert agents to streamline your property search and match you with your dream home.
+              Whether it's a private space or an entire floor for your organization, discover many customizable options.
             </Text>
           </GridItem>
           <GridItem p={4} boxShadow='md' rounded='md' w='100%'>
-          <Icon fontSize={"2rem"} as={GiDesk} />
+          <Icon color={"mainColor"} fontSize={"4rem"} as={FaPrint} />
           <Heading pt={4} w={"100%"} textAlign={"left"} fontSize={"1.2rem"}>
-            Find a place of business
+            Tailored to your needs:
           </Heading>
           <Text pt={2}>
-            Swwwing-State leverages market insights and investment expertise to assist you in finding the perfect property for business ventures and entrepreneurship
-            </Text>
+            Premium offices, semi-furnished, or empty spaces that you can adapt to your own requirements.
+          </Text>
           </GridItem>
           <GridItem p={4} boxShadow='md' rounded='md' w='100%'>
-          <Icon fontSize={"2rem"} as={PiCoffeeFill} />
+          <Icon color={"mainColor"} fontSize={"4rem"} as={FaMugHot} />
           <Heading pt={4} w={"100%"} textAlign={"left"} fontSize={"1.2rem"}>
-            Rentals Services
+            All in one place
           </Heading>
             <Text pt={2}>
-            Swwwing-State offers a user-friendly platform with a wide range of rental property options to meet your needs.
+              Find spaces with amenities such as a gym, cafeteria, buffet, recreation rooms, and more.
             </Text>
           </GridItem>
       </Grid>

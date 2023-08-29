@@ -1,32 +1,32 @@
-import { HStack, VStack, Text, Icon, Heading, UnorderedList, ListItem } from "@chakra-ui/react";
-import { BsInstagram, BsTelegram, BsLinkedin, BsTwitter } from 'react-icons/bs';
-
+import { HStack, VStack, Text, Icon, UnorderedList, ListItem, Image, Link } from "@chakra-ui/react";
+import { BsInstagram, BsLinkedin } from 'react-icons/bs';
+import logoWhite from "../assets/logo_white.png"
 const Footer = () => {
   return (
     <VStack alignItems={"stretch"} backgroundColor={"blackAlpha.900"} px={12} pt={16} pb={4}>
     <HStack alignItems={"flex-start"} justifyContent={"space-between"} color={"whiteAlpha.900"} as={"footer"}>
       <VStack alignItems={"flex-starts"}>
-        <Heading pb={2} fontSize="lg">
-          SwwwingState
-        </Heading>
+        <Image maxW={"120px"} src={logoWhite} />
         <Text py={2} fontSize="sm">
         <UnorderedList listStyleType={"none"} m={0}>
           <ListItem> 
-            Pfeifergasse 13, Butzbach
+            123 Park Avenue, Suite 450, Nueva York, NY 10001
           </ListItem>
           <ListItem>
-          Bergheimer Strasse 76, Heidelberg
+            567 Tech Plaza, 5th Floor, Brooklyn, NY 11234
           </ListItem>
           <ListItem>
-          Schlossstrasse 16, Aachen
+            789 Financial Tower, Financial District, NY 10005
           </ListItem>
         </UnorderedList>
         </Text>
         <HStack py={2} gap={8} fontSize={"1.5rem"}>
-          <Icon as={BsInstagram} />
-          <Icon as={BsTelegram} />
-          <Icon as={BsLinkedin} />
-          <Icon as={BsTwitter} />
+          <Link href='https://www.instagram.com/swwwing.ok/' isExternal>
+            <Icon ex  as={BsInstagram} />
+          </Link>
+          <Link href='https://www.linkedin.com/company/swwwing/' isExternal>
+            <Icon as={BsLinkedin} />
+          </Link>
         </HStack>
       </VStack>
       <HStack gap={12} alignItems={"flex-starts"}>

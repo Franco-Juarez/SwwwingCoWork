@@ -5,6 +5,10 @@ const theme = extendTheme({
     heading: "'Unbounded Variable', sans-serif",
     body: `'Quicksand Variable', sans-serif`,
   },
+  colors: {
+    mainColor: "#F5A524",
+    secondaryColor: "#343E63"
+  }
 })
 
 export default theme
