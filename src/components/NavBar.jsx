@@ -17,7 +17,7 @@ const NavBar = () => {
       delay: 0.5,
       ease: [0, 0.71, 0.2, 1.01]
       }}
-    px={8} 
+    px={{base:4, md: 8}} 
     backgroundColor={"whiteAlpha.400"} 
     justifyContent={"space-between"} 
     >
@@ -28,35 +28,24 @@ const NavBar = () => {
       justifyContent={{base: isToggled ? "flex-end" : "center", lg:"center"}}
       alignItems={{base: isToggled ? "flex-end" : "center", lg:"center"}}
       p={4}
+      pr={0}
       position={{base:isToggled ? "absolute" : "relative", lg:"relative"}}
       top={0}
       right={0}
       bottom={0}
+      w={{base: isToggled ? "100vw" : "auto", lg:"auto"}}
       h={{base: isToggled ? "100vh" : "auto", lg:"auto"}}
       textAlign={{base:"right", lg:"center"}}
-      backgroundColor={"whiteAlpha.400"}
-      boxShadow={{base: isToggled ? "0 0 0 100vmax rgba(0, 0, 0, .5)" : "none", lg:"none"}}
+      backgroundColor={"#FFFFFF"}
+      boxShadow={{base: isToggled ? "0 0 0 100vmax rgba(0, 0, 0, .7)" : "none", lg:"none"}}
       >
-        <UnorderedList m={0} p={isToggled ? 8 : 2}  gap={4} display={{base: isToggled ? 'flex' : 'none', lg:"flex"}} flexDirection={{base:"column", lg:"row"}} alignItems={"center"} fontSize={20}>
-          <ListItem listStyleType={"none"}><Link>For Sell</Link></ListItem>
-          <ListItem listStyleType={"none"}><Link>For Rent</Link></ListItem>
-          <ListItem listStyleType={"none"}><Link>News Incomes</Link></ListItem>
+        <UnorderedList w={"100%"} m={0} p={isToggled ? 8 : 2}  gap={4} display={{base: isToggled ? 'flex' : 'none', lg:"flex"}} flexDirection={{base:"column", lg:"row"}} alignItems={"center"} fontSize={20}>
+          <ListItem listStyleType={"none"}><Link>Servicios</Link></ListItem>
+          <ListItem listStyleType={"none"}><Link>Oficinas</Link></ListItem>
           <ListItem listStyleType={"none"}><Link>Blog</Link></ListItem>
-        </UnorderedList>
-        <Button
-        display={{base:"flex", lg:"none"}}
-        flexDirection={"column"}
-        gap={2}
-        p={0}
-        backgroundColor={"transparent"}
-        onClick={() => setIsToggled(!isToggled)}
-        >
-          <CloseIcon display ={isToggled ? 'block' : 'none'} />
-          <HamburgerIcon display ={isToggled ? 'none' : 'block'}   />
-        </Button>
-        <Popover> 
+          <Popover> 
           <PopoverTrigger>
-          <Button display={{base:"none", lg: "block"}}  _hover={{ bg: 'mainColor' }} px={8} color={"whiteAlpha.900"} borderRadius={"20px"} backgroundColor={"blackAlpha.900"}>Book a Call</Button>
+          <Button  _hover={{ bg: 'mainColor' }} px={8} color={"whiteAlpha.900"} borderRadius={"20px"} backgroundColor={"blackAlpha.900"}>Contacto</Button>
           </PopoverTrigger>
           <Portal>
             <PopoverContent>
@@ -69,6 +58,19 @@ const NavBar = () => {
             </PopoverContent>
           </Portal>
         </Popover>
+        </UnorderedList>
+        <Button
+        display={{base:"flex", lg:"none"}}
+        flexDirection={"column"}
+        mr={{base: isToggled ? 4 : "auto", lg:"auto"}}
+        gap={2}
+        p={4}
+        backgroundColor={"transparent"}
+        onClick={() => setIsToggled(!isToggled)}
+        >
+          <CloseIcon display ={isToggled ? 'block' : 'none'} />
+          <HamburgerIcon display ={isToggled ? 'none' : 'block'}   />
+        </Button>
       </HStack>
     </HStack>
   )
