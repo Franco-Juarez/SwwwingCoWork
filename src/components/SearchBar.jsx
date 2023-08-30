@@ -4,7 +4,7 @@ import FilterMenu from "./FilterMenu";
 
 const SearchBar = () => {
     return(
-      <HStack py={4} w={"100%"} justifyContent={"space-between"} gap={10}>
+      <HStack flexDirection={{base:"column", md:"row"}} py={4} w={"100%"} justifyContent={"space-between"} gap={10}>
           <Select placeholder='Type of Office'>
             <option value='option1'>Private</option>
             <option value='option2'>Co-Work</option>

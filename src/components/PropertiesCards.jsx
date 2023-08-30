@@ -12,7 +12,7 @@ const PropertiesCards = ({propertyName, propertyPrice, propertyLocation, propert
     <GridItem>
       <VStack minH={"520px"} px={2} pb={8} alignItems={"flex-start"} boxShadow='md' rounded='md' w={"100%"} justifyContent={"space-between"}>
         <Box position={"relative"}>
-          <Image objectFit={"cover"} w={"100%"} h={"200px"} borderRadius={20} src={propertyImage} />
+          <Image objectFit={"cover"} w={"100%"} borderRadius={20} src={propertyImage} />
           <Icon mr={2} mt={2} borderRadius={"50%"} p={2} backgroundColor={"whiteAlpha.900"} fontSize={"2rem"}  right={0} top={0} zIndex={9999} position={"absolute"} as={AiOutlineHeart}></Icon>
         </Box>
         <Flex py={2} gap={2}>

@@ -56,7 +56,7 @@ const NavBar = () => {
         </Button>
         <Popover> 
           <PopoverTrigger>
-          <Button  _hover={{ bg: 'mainColor' }} px={8} color={"whiteAlpha.900"} borderRadius={"20px"} backgroundColor={"blackAlpha.900"}>Book a Call</Button>
+          <Button display={{base:"none", lg: "block"}}  _hover={{ bg: 'mainColor' }} px={8} color={"whiteAlpha.900"} borderRadius={"20px"} backgroundColor={"blackAlpha.900"}>Book a Call</Button>
           </PopoverTrigger>
           <Portal>
             <PopoverContent>
