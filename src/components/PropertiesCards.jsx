@@ -19,7 +19,7 @@ const PropertiesCards = ({propertyName, propertyPrice, propertyLocation, propert
           <Button fontSize={".8rem"} borderRadius={20} display={"inline"}>{propertyLocation}</Button>
           <Button fontSize={".8rem"} borderRadius={20} display={"inline"}>Negotiable</Button>
         </Flex>
-        <Heading fontSize={"1.2rem"}>${propertyPrice}</Heading>
+        <Heading fontSize={"1.2rem"}>US${propertyPrice}</Heading>
         <Text fontWeight={"bold"}>{propertyName}</Text>
         <Text>{propertydescripcion}</Text>
         <Flex pt={8} gap={2}>

@@ -17,7 +17,7 @@ const NavBar = () => {
       delay: 0.5,
       ease: [0, 0.71, 0.2, 1.01]
       }}
-    px={{base:4, md: 8}} 
+    px={{base:4, md: 12}} 
     backgroundColor={"whiteAlpha.400"} 
     justifyContent={"space-between"} 
     >

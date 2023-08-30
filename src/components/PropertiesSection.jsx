@@ -10,10 +10,10 @@ const PropertiesSection = () => {
         <HStack pb={4} width={"100%"} justifyContent={{base: "center", md:"space-between"}}>
           <Box>
             <Heading textAlign={{base: "center", md:"left"}} pb={4} letterSpacing={4} color={"blue.300"} fontSize={"1rem"}>
-              PROPERTIES
+              OFICINAS
             </Heading>
             <Heading textAlign={{base: "center", md:"left"}} >
-              Properties in Cities <br /> and Provinces in Argentina
+              Propiedades disponibles en Latinoamérica
             </Heading>
           </Box>
         </HStack>

@@ -11,14 +11,14 @@ const BlogSection = () => {
       <HStack flexDirection={{base:"column", lg:"row"}} width={"100%"} justifyContent={"space-between"}>
         <Box>
           <Heading textAlign={{base: "center", lg:"left"}}  pb={4} letterSpacing={4} color={"blue.300"} fontSize={"1rem"}>
-            BLOGS
+            BLOG
           </Heading>
           <Heading textAlign={{base: "center", lg:"left"}} >
-            Articles Related to<br /> Aesthetic Home Design
+            Descubre las tendencias en Gestión Laboral y Coworking
           </Heading>
         </Box>
         <Link href='https://chakra-ui.com' isExternal>
-          Explore All Blogs <ExternalLinkIcon mx='2px' />
+          Explora nuestro blog <ExternalLinkIcon mx='2px' />
         </Link>
       </HStack>
       <HStack flexDirection={{base:"column", lg:"row"}} gap={8} pt={12} w={"100%"} alignItems={"flex-start"} justifyContent={"space-between"}>

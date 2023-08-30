@@ -10,7 +10,7 @@ const SearchBar = () => {
             <option value='option2'>Co-Work</option>
             <option value='option3'>Full Office</option>
           </Select>
-          <Select placeholder='Furnishing'>
+          <Select placeholder='Ubicación'>
             <option value='option1'>No Furnishings</option>
             <option value='option2'>Basic</option>
             <option value='option3'>Full</option>
