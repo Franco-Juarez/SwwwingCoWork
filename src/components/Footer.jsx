@@ -5,10 +5,9 @@ const Footer = () => {
   return (
     <VStack alignItems={"stretch"} backgroundColor={"blackAlpha.900"} px={{base:4, lg:12}} pt={16} pb={4}>
       <Grid 
-      templateColumns={{base:'repeat(1, 1fr)', xl:'repeat(3, 1fr)'}} 
+      templateColumns={{base:'repeat(1, 1fr)', lg:'repeat(3, 1fr)'}} 
       gap={2}  
-      flexDirection={{base:"column", lg:"row"}} 
-      alignItems={{base:"center", lg:"flex-start"}} 
+      alignItems={{base:"center", md:"flex-start"}} 
       justifyContent={"space-between"} 
       color={"whiteAlpha.900"} 
       as={"footer"}
@@ -40,12 +39,12 @@ const Footer = () => {
           </UnorderedList>
         </GridItem>
         <GridItem>
-          <VStack alignItems={"flex-end"}>
-            <UnorderedList textAlign={{base: "center", lg:"right"}} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} m={0} listStyleType={"none"}>
-              <ListItem pb={4}>
-                Dirección ficticia
+          <VStack alignItems={{base:"center", lg:"flex-end"}}>
+            <UnorderedList gap={2} textAlign={{base: "center", md:"right"}} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} m={0} listStyleType={"none"}>
+              <ListItem>
+              <Link isExternal href="https://goo.gl/maps/EGdadLTqm6g1G4wt5"> Juan Domingo Perón, B8105,<br/> Monte Hermoso, Buenos Aires</Link>
               </ListItem>
-              <ListItem pb={4}>
+              <ListItem>
                 <Link isExternal href="mailto:swwwing.ar@gmail.com">swwwing.ar@gmail.com</Link>
               </ListItem>
             </UnorderedList>

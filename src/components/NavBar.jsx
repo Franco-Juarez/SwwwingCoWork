@@ -24,7 +24,7 @@ const NavBar = () => {
     width={"90%"}
     margin={"0 auto"}
     >
-      <Image w={100} src={logo} />
+      <a href="/"><Image w={100} src={logo} /></a>
       <HStack 
       gap={4}
       flexDirection={{base: isToggled ? "column-reverse" : "row", lg:"row"}}
@@ -43,9 +43,9 @@ const NavBar = () => {
       boxShadow={{base: isToggled ? "0 0 0 100vmax rgba(0, 0, 0, .7)" : "none", lg:"none"}}
       >
         <UnorderedList w={"100%"} m={0}  gap={4} display={{base: isToggled ? 'flex' : 'none', lg:"flex"}} flexDirection={{base:"column", lg:"row"}} alignItems={"center"} fontSize={20}>
-          <ListItem listStyleType={"none"}><Link>Servicios</Link></ListItem>
-          <ListItem listStyleType={"none"}><Link>Oficinas</Link></ListItem>
-          <ListItem listStyleType={"none"}><Link>Blog</Link></ListItem>
+          <ListItem listStyleType={"none"}><a href="#servicios">Servicios</a></ListItem>
+          <ListItem listStyleType={"none"}><a href="#oficinas">Oficinas</a></ListItem>
+          <ListItem listStyleType={"none"}><a href="#blog">Blog</a></ListItem>
           <PopUpBtn
           btnName="Contacto"
           />
