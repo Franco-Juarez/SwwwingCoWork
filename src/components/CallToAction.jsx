@@ -1,26 +1,36 @@
-import { Button, VStack, Heading, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, Portal, PopoverArrow, PopoverCloseButton  } from "@chakra-ui/react";
-import ctaImg from "../assets/ctaBg.png";
+import { Text, VStack, Heading, Flex, Input  } from "@chakra-ui/react";
+import ctaImg from "../assets/ctaImg.png";
+import PopUpBtn from "./PopUpBtn";
 
 const CallToActionSection = () => {
   return (
-    <VStack backgroundPosition={"top"} backgroundRepeat={"no-repeat"} backgroundSize={"cover"} backgroundImage={ctaImg} gap={8} alignItems={{base:"center", lg:"flex-start"}} p={{base: 4, lg:12}} >
-      <Heading textAlign={{base: "center", lg:"left"}} fontWeight={"400"} textTransform={"uppercase"} fontSize={"1rem"}>Suscríbete a nuestro newsletter</Heading>
-      <Heading textAlign={{base: "center", lg:"left"}}>Recibe las últimas actualizaciones sobre Gestión Laboral y propiedades en tu correo.</Heading>
-      <Popover> 
-          <PopoverTrigger>
-          <Button _hover={{ bg: 'mainColor', color:"blackAlpha.900" }} px={8} borderRadius={"15px"} backgroundColor={"blackAlpha.900"} color={"whiteAlpha.900"}>Find Now</Button>
-          </PopoverTrigger>
-          <Portal>
-            <PopoverContent>
-              <PopoverArrow />
-              <PopoverHeader>Header</PopoverHeader>
-              <PopoverCloseButton />
-              <PopoverBody>
-                <Button colorScheme='blue'>Button</Button>
-              </PopoverBody>
-            </PopoverContent>
-          </Portal>
-        </Popover>
+    <VStack 
+    backgroundPosition={"top"} 
+    backgroundRepeat={"no-repeat"} 
+    backgroundSize={"cover"} 
+    backgroundImage={ctaImg} 
+    p={{base: 4, lg:12}}
+    >
+      <VStack
+      w={"90%"}
+      margin={"0 auto"}
+      gap={4} 
+      alignItems={{base:"center", lg:"flex-start"}} 
+      >
+        <Heading color={"whiteAlpha.900"} w={"75%"} textAlign={{base: "center", lg:"left"}}>Suscríbete a nuestro newsletter</Heading>
+        <Text color={"whiteAlpha.900"} textAlign={{base: "center", lg: "left"}} fontSize={"1rem"} w={{base: "100%", md:"60%"}}>Recibe semanalmente en tu email las últimas novedades en materia de Gestión Laboral, junto con los nuevos ingresos de propiedades.</Text>
+        <Flex flexDirection={{base: "column", md:"row"}} gap={4}>
+          <Input 
+          type="email"
+          color='whiteAlpha.900'
+          _placeholder={{ opacity: 1, color: 'whiteAlpha.900' }}
+          focusBorderColor="whiteAlpha.900" 
+          placeholder='Email'></Input>
+        <PopUpBtn 
+        btnName="Suscríbete"
+        />
+        </Flex>
+      </VStack>
     </VStack>
   )
 }

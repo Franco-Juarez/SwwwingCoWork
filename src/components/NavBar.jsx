@@ -3,6 +3,7 @@ import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import logo from "../assets/logo.png"
 import { motion } from 'framer-motion';
+import PopUpBtn from "./PopUpBtn";
 
 const NavBar = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -17,9 +18,11 @@ const NavBar = () => {
       delay: 0.5,
       ease: [0, 0.71, 0.2, 1.01]
       }}
-    px={{base:4, md: 12}} 
+    px={{base:0, lg: 12}} 
     backgroundColor={"whiteAlpha.400"} 
-    justifyContent={"space-between"} 
+    justifyContent={"space-between"}
+    width={"90%"}
+    margin={"0 auto"}
     >
       <Image w={100} src={logo} />
       <HStack 
@@ -39,25 +42,13 @@ const NavBar = () => {
       backgroundColor={"#FFFFFF"}
       boxShadow={{base: isToggled ? "0 0 0 100vmax rgba(0, 0, 0, .7)" : "none", lg:"none"}}
       >
-        <UnorderedList w={"100%"} m={0} p={isToggled ? 8 : 2}  gap={4} display={{base: isToggled ? 'flex' : 'none', lg:"flex"}} flexDirection={{base:"column", lg:"row"}} alignItems={"center"} fontSize={20}>
+        <UnorderedList w={"100%"} m={0}  gap={4} display={{base: isToggled ? 'flex' : 'none', lg:"flex"}} flexDirection={{base:"column", lg:"row"}} alignItems={"center"} fontSize={20}>
           <ListItem listStyleType={"none"}><Link>Servicios</Link></ListItem>
           <ListItem listStyleType={"none"}><Link>Oficinas</Link></ListItem>
           <ListItem listStyleType={"none"}><Link>Blog</Link></ListItem>
-          <Popover> 
-          <PopoverTrigger>
-          <Button  _hover={{ bg: 'mainColor' }} px={8} color={"whiteAlpha.900"} borderRadius={"20px"} backgroundColor={"blackAlpha.900"}>Contacto</Button>
-          </PopoverTrigger>
-          <Portal>
-            <PopoverContent>
-              <PopoverArrow />
-              <PopoverHeader>Header</PopoverHeader>
-              <PopoverCloseButton />
-              <PopoverBody>
-                <Button colorScheme='blue'>Button</Button>
-              </PopoverBody>
-            </PopoverContent>
-          </Portal>
-        </Popover>
+          <PopUpBtn
+          btnName="Contacto"
+          />
         </UnorderedList>
         <Button
         display={{base:"flex", lg:"none"}}

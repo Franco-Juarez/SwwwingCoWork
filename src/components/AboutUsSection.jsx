@@ -3,12 +3,19 @@ import { FaBuilding, FaPrint, FaMugHot } from "react-icons/fa6";
 
 const AboutUsSection = () => {
   return (
-    <VStack alignItems={"flex-start"} p={{base:4, md:12}} pt={{base: 8, md:12}}>
+    <VStack 
+    id="servicios" 
+    alignItems={"flex-start"} 
+    p={{base:4, lg:12}} 
+    pt={{base: 8, md:12}}
+    width={"90%"}
+    margin={"0 auto"} 
+    >
       <VStack alignItems={{base:"center", md:"flex-start"}} gap={4}>
-          <Heading textTransform={"uppercase"} textAlign={{base: "center", md:"left"}} color={"blue.500"} fontSize="sm">Tu lugar de trabajo ideal</Heading>
+          <Heading textTransform={"uppercase"} textAlign={{base: "center", lg:"left"}} fontFamily={"body"} color={"secondaryColor"} fontSize="sm">Tu lugar de trabajo ideal</Heading>
           <Heading textAlign={{base: "center", md:"left"}} >Nuestros servicios</Heading>
         <Text textAlign={{base: "center", md:"left"}} >
-          Mas de 1500 oficinas y espacios de coworking te esperan en nuestro amplio catálogo. Opciones personalizables que puedes adaptar a tus necesidades, con contacto directo con sus propietarios o arrendatarios.
+          Más de 1500 oficinas y espacios de coworking te esperan en nuestro amplio catálogo. Opciones personalizables que puedes adaptar a tus necesidades, con contacto directo con sus propietarios o arrendatarios.
         </Text>
       </VStack>
       <Grid pb={8} pt={20} templateColumns={{base:'repeat(1, 1fr)', md:'repeat(2, 1fr)', xl:'repeat(3, 1fr)'}} gap={10}>

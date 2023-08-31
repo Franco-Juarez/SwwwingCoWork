@@ -4,22 +4,38 @@ import logoWhite from "../assets/logo_white.png"
 const Footer = () => {
   return (
     <VStack alignItems={"stretch"} backgroundColor={"blackAlpha.900"} px={{base:4, lg:12}} pt={16} pb={4}>
-      <Grid templateColumns={{base:'repeat(1, 1fr)', xl:'repeat(3, 1fr)'}} gap={2}  flexDirection={{base:"column", lg:"row"}} alignItems={{base:"center", lg:"flex-start"}} justifyContent={"space-between"} color={"whiteAlpha.900"} as={"footer"}>
+      <Grid 
+      templateColumns={{base:'repeat(1, 1fr)', xl:'repeat(3, 1fr)'}} 
+      gap={2}  
+      flexDirection={{base:"column", lg:"row"}} 
+      alignItems={{base:"center", lg:"flex-start"}} 
+      justifyContent={"space-between"} 
+      color={"whiteAlpha.900"} 
+      as={"footer"}
+      margin={"0 auto"}
+      w={"90%"}
+      >
         <GridItem>
           <VStack alignItems={{base: "center",lg:"flex-start"}}>
             <Image maxW={"120px"} src={logoWhite} />
           </VStack>
         </GridItem>
         <GridItem>
-          <UnorderedList textAlign={"center"} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} m={0} listStyleType={"none"}>
-              <ListItem pb={4}>
-                Servicios
+          <UnorderedList gap={2} textAlign={"center"} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} m={0} listStyleType={"none"}>
+              <ListItem>
+                <a href="/#servicios">
+                  Servicios
+                </a>
               </ListItem>
-              <ListItem pb={4}>
-                Oficinas
+              <ListItem>
+                <a href="/#oficinas">
+                  Oficinas
+                </a>
               </ListItem>
-              <ListItem pb={4}>
-                Blog
+              <ListItem>
+                <a href="/#blog">
+                  Blog
+                </a>
               </ListItem>
           </UnorderedList>
         </GridItem>

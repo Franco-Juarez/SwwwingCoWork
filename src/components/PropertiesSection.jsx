@@ -6,10 +6,15 @@ import SearchBar from "./SearchBar";
 
 const PropertiesSection = () => {
   return (
-    <VStack pb={20} px={{base:4, lg:12}} width={"100%"} alignItems={{base:"center", md:"flex-start"}}>
+    <VStack 
+      id="oficinas" 
+      pb={20} px={{base:4, lg:12}} 
+      width={"90%"} 
+      margin={"0 auto"} 
+      alignItems={{base:"center", md:"flex-start"}}>
         <HStack pb={4} width={"100%"} justifyContent={{base: "center", md:"space-between"}}>
           <Box>
-            <Heading textAlign={{base: "center", md:"left"}} pb={4} letterSpacing={4} color={"blue.300"} fontSize={"1rem"}>
+            <Heading textAlign={{base: "center", md:"left"}} pb={4} letterSpacing={4} fontFamily={"body"} color={"secondaryColor"}fontSize={"1rem"}>
               OFICINAS
             </Heading>
             <Heading textAlign={{base: "center", md:"left"}} >
@@ -21,7 +26,7 @@ const PropertiesSection = () => {
       <Grid 
       pt={8}
       w={"100%"}
-      templateColumns={{xl:'repeat(4, 1fr)', lg:'repeat(3, 1fr)', md:'repeat(2, 1fr)', base:'repeat(1, 1fr)'}}
+      templateColumns={{"2xl":'repeat(4, 1fr)', xl:'repeat(3, 1fr)', md:'repeat(2, 1fr)', base:'repeat(1, 1fr)'}}
       gap={8}>
         {
           properties.map(property =>
