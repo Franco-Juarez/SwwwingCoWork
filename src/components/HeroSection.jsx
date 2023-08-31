@@ -1,10 +1,22 @@
 import { Box, HStack, Heading, Text, VStack } from "@chakra-ui/react";
 import bgImage from "../assets/heroBackground.png";
+import { keyframes } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+
+const animationKeyframes = keyframes`
+  0% { opacity: 0;}
+  100% { opacity: 1 }
+`;
+
+const animation = `${animationKeyframes} .5s ease-in-out`;
+ 
 
 const HeroSection = () => {
   return (
     <HStack p={{base:2, lg:0}} backgroundPosition={"bottom"} backgroundRepeat={"no-repeat"} backgroundSize={"cover"} backgroundImage={bgImage} width={"100%"} height={"90vh"}>
       <VStack 
+      as={motion.div}
+      animation={animation}
       width={"90%"}
       margin={"0 auto"} 
       gap={4} alignItems={{base:"center", md: "flex-start"}}  

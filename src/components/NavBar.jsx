@@ -1,23 +1,25 @@
-import { HStack, UnorderedList, ListItem, Link, Button, Image, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, Portal, PopoverArrow, PopoverCloseButton } from "@chakra-ui/react";
+import { HStack, UnorderedList, ListItem, Button, Image } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import logo from "../assets/logo.png"
-import { motion } from 'framer-motion';
 import PopUpBtn from "./PopUpBtn";
+import { keyframes } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+
+const animationKeyframes = keyframes`
+  0% { opacity: 0;}
+  100% { opacity: 1 }
+`;
+
+const animation = `${animationKeyframes} .5s ease-in-out`;
 
 const NavBar = () => {
   const [isToggled, setIsToggled] = useState(false);
 
   return (
     <HStack
-    as={motion.div}  
-    initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{
-      duration: 0.8,
-      delay: 0.5,
-      ease: [0, 0.71, 0.2, 1.01]
-      }}
+    as={motion.div}
+    animation={animation}  
     px={{base:0, lg: 12}} 
     backgroundColor={"whiteAlpha.400"} 
     justifyContent={"space-between"}

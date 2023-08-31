@@ -1,6 +1,8 @@
 import { HStack, VStack, Text, Icon, UnorderedList, ListItem, Image, Link, Grid, GridItem } from "@chakra-ui/react";
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import logoWhite from "../assets/logo_white.png"
+import { motion } from "framer-motion";
+
 const Footer = () => {
   return (
     <VStack alignItems={"stretch"} backgroundColor={"blackAlpha.900"} px={{base:4, lg:12}} pt={16} pb={4}>
@@ -16,7 +18,9 @@ const Footer = () => {
       >
         <GridItem>
           <VStack alignItems={{base: "center",lg:"flex-start"}}>
-            <Image maxW={"120px"} src={logoWhite} />
+            <a href="/">
+              <Image maxW={"120px"} src={logoWhite} />
+            </a>
           </VStack>
         </GridItem>
         <GridItem>
@@ -49,10 +53,18 @@ const Footer = () => {
               </ListItem>
             </UnorderedList>
             <HStack gap={4} fontSize={"1rem"}>
-              <Link href='https://www.instagram.com/swwwing.ok/' isExternal>
+              <Link
+              as={motion.a}
+              whileHover={{ scale: 1.2}}
+              whileTap={{ scale: 0.9}}
+              href='https://www.instagram.com/swwwing.ok/' isExternal>
                 <Icon ex  as={BsInstagram} />
               </Link>
-              <Link href='https://www.linkedin.com/company/swwwing/' isExternal>
+              <Link
+              as={motion.a}
+              whileHover={{ scale: 1.2}}
+              whileTap={{ scale: 0.9}}
+              href='https://www.linkedin.com/company/swwwing/' isExternal>
                 <Icon as={BsLinkedin} />
               </Link>
             </HStack>

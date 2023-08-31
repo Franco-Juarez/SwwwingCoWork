@@ -2,11 +2,28 @@ import { VStack, HStack, Box, Heading, Grid } from "@chakra-ui/react"
 import PropertiesCards from "./PropertiesCards";
 import properties from "../data/Properties.json";
 import SearchBar from "./SearchBar";
+import { motion } from "framer-motion";
 
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.6,
+      staggerChildren: 0.2
+    }
+  }
+};
 
 const PropertiesSection = () => {
   return (
-    <VStack 
+    <VStack
+      as={motion.div}
+      variants={container}
+      initial="hidden"
+      animate="visible"
       id="oficinas" 
       pb={20} px={{base:4, lg:12}} 
       width={"90%"} 
@@ -31,7 +48,14 @@ const PropertiesSection = () => {
         {
           properties.map(property =>
           {
-            return <PropertiesCards key={property.id} propertydescripcion = {property.descripcion} propertyImage = {property.image} propertyPrice = {property.precio} propertyLocation = {property.ubicacion} propertyName = {property.nombre} />
+            return <PropertiesCards
+            key={property.id}
+            propertydescripcion = {property.descripcion}
+            propertyImage = {property.image}
+            propertyPrice = {property.precio}
+            propertyLocation = {property.ubicacion}
+            propertyName = {property.nombre} 
+            />
           })
         }
       </Grid>
