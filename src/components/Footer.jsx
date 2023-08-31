@@ -18,9 +18,7 @@ const Footer = () => {
       >
         <GridItem>
           <VStack alignItems={{base: "center",lg:"flex-start"}}>
-            <a href="/">
-              <Image maxW={"120px"} src={logoWhite} />
-            </a>
+            <Image maxW={"120px"} src={logoWhite} />
           </VStack>
         </GridItem>
         <GridItem>
