@@ -22,27 +22,40 @@ const Footer = () => {
           </VStack>
         </GridItem>
         <GridItem>
-          <UnorderedList gap={2} textAlign={"center"} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} m={0} listStyleType={"none"}>
+          <UnorderedList
+          gap={2} 
+          textAlign={"center"} 
+          display={{base: "none", lg:"flex"}} 
+          flexDirection={"column"} 
+          justifyContent={"space-between"} 
+          m={0} 
+          listStyleType={"none"}>
               <ListItem>
-                <a href="/#servicios">
+                <Link 
+                _hover={{color:"mainColor", fontWeight:700}}
+                href="/#servicios">
                   Servicios
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a href="/#oficinas">
+              <Link 
+                _hover={{color:"mainColor", fontWeight:700}}
+                href="/#oficinas">
                   Oficinas
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a href="/#blog">
+              <Link 
+                _hover={{color:"mainColor", fontWeight:700}}
+                href="/#blog">
                   Blog
-                </a>
+                </Link>
               </ListItem>
           </UnorderedList>
         </GridItem>
         <GridItem>
           <VStack alignItems={{base:"center", lg:"flex-end"}}>
-            <UnorderedList gap={2} textAlign={{base: "center", md:"right"}} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} m={0} listStyleType={"none"}>
+            <UnorderedList gap={2} textAlign={{base: "center", lg:"right"}} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} m={0} listStyleType={"none"}>
               <ListItem>
               <Link isExternal href="https://goo.gl/maps/EGdadLTqm6g1G4wt5"> Juan Domingo Perón, B8105,<br/> Monte Hermoso, Buenos Aires</Link>
               </ListItem>
@@ -70,9 +83,11 @@ const Footer = () => {
         </GridItem>
       </Grid>
       <HStack pt={4} justifyContent={"center"} color={"whiteAlpha.900"}>
-        <Text fontSize={".8rem"}>
-        © Swwwing Agency 2023 - All rights reserved
-        </Text>
+        <Link href="https://www.swwwing.com.ar" isExternal>
+          <Text fontSize={".8rem"}>
+          © Swwwing Agency 2023 - All rights reserved
+          </Text>
+        </Link>
       </HStack>
     </VStack>
   )

@@ -12,6 +12,7 @@ const FilterMenu = () => {
         aria-label='Options'
         icon={<BiListUl />}
         variant='outline'
+        backgroundColor={"whiteAlpha.900"}
       />
       <MenuList>
       <MenuItem icon={<BsStars />} >

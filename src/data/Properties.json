@@ -1,99 +1,99 @@
 [
-    {
-      "id": 1,
-      "nombre": "Oficina Ejecutiva en Midtown",
-      "descripcion": "Moderna oficina ejecutiva en el corazón de Midtown Manhattan.",
-      "precio": 5500,
-      "ubicacion": "Midtown Manhattan",
-      "image":"officesImgs/office1.jpg"
-    },
-    {
-      "id": 2,
-      "nombre": "Loft de Diseño en Williamsburg",
-      "descripcion": "Amplio loft de diseño en el trendy barrio de Williamsburg, Brooklyn. Perfecto para startups creativas.",
-      "precio": 7500,
-      "ubicacion": "Williamsburg, Brooklyn",
-      "image":"officesImgs/office2.jpg"
-    },
-    {
-      "id": 3,
-      "nombre": "Oficina con vista a Central Park",
-      "descripcion": "Oficina con vistas espectaculares a Central Park. Ubicación premium en el Upper West Side.",
-      "precio": 10500,
-      "ubicacion": "Upper West Side",
-      "image":"officesImgs/office3.jpg"
-    },
-    {
-      "id": 4,
-      "nombre": "Oficina Compartida",
-      "descripcion": "Espacio de trabajo compartido en el Financial District. Ideal para emprendedores y freelancers.",
-      "precio": 3500,
-      "ubicacion": "Financial District",
-      "image":"officesImgs/office11.jpg"
-    },
-    {
-      "id": 5,
-      "nombre": "Suite Ejecutiva en Hudson Yards",
-      "descripcion": "Suite ejecutiva de lujo en el nuevo desarrollo de Hudson Yards. Vistas panorámicas impresionantes.",
-      "precio": 9500,
-      "ubicacion": "Hudson Yards",
-      "image":"officesImgs/office4.jpg"
-    },
-    {
-      "id": 6,
-      "nombre": "Oficina en Harlem",
-      "descripcion": "Oficina recién renovada en el animado barrio de Harlem. Espacio perfecto para una pequeña empresa.",
-      "precio": 3200,
-      "ubicacion": "Harlem",
-      "image":"officesImgs/office5.jpg"
-    },
-    {
-      "id": 7,
-      "nombre": "Espacio de Coworking en DUMBO",
-      "descripcion": "Espacio de coworking con vistas al puente de Brooklyn. Ambiente creativo y colaborativo.",
-      "precio": 4200,
-      "ubicacion": "DUMBO, Brooklyn",
-      "image":"officesImgs/office6.jpg"
-    },
-    {
-      "id": 8,
-      "nombre": "Oficina Corporativa en Queens",
-      "descripcion": "Amplia oficina corporativa en Queens con fácil acceso al transporte público.",
-      "precio": 5800,
-      "ubicacion": "Queens",
-      "image":"officesImgs/office7.jpg"
-    },
-    {
-      "id": 9,
-      "nombre": "Oficina con Terraza en Chelsea",
-      "descripcion": "Oficina con terraza privada en el distrito de arte de Chelsea. Ideal para empresas de diseño.",
-      "precio": 8900,
-      "ubicacion": "Chelsea",
-      "image":"officesImgs/office8.jpg"
-    },
-    {
-      "id": 10,
-      "nombre": "Oficina Virtual en Tribeca",
-      "descripcion": "Oficina virtual en el elegante barrio de Tribeca. Servicios de recepción y dirección comercial incluidos.",
-      "precio": 1500,
-      "ubicacion": "Tribeca",
-      "image":"officesImgs/office9.jpg"
-    },
-    {
-      "id": 11,
-      "nombre": "Oficina Industrial en Long Island",
-      "descripcion": "Espacio de oficina industrial en ascenso en Long Island City.",
-      "precio": 4800,
-      "ubicacion": "Long Island City",
-      "image":"officesImgs/office10.jpg"
-    },
-    {
-      "id": 12,
-      "nombre": "Oficina Boutique en SoHo",
-      "descripcion": "Oficina boutique en el icónico barrio de SoHo. Diseño elegante y ambiente exclusivo.",
-      "precio": 6900,
-      "ubicacion": "SoHo",
-      "image":"officesImgs/office11.jpg"
-    }
-  ]
+  {
+    "id": 1,
+    "nombre": "Oficina en Santiago de Cali",
+    "descripcion": "Oficina moderna en Santiago de Cali, Colombia.",
+    "precio": 4600,
+    "ubicacion": "Santiago de Cali, Colombia",
+    "image": "officesImgs/office1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Oficina en Bogotá",
+    "descripcion": "Moderna oficina en el centro de Bogotá, Colombia.",
+    "precio": 4500,
+    "ubicacion": "Bogotá, Colombia",
+    "image": "officesImgs/office2.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Oficina en São Paulo",
+    "descripcion": "Oficina ejecutiva en el distrito financiero de São Paulo, Brasil.",
+    "precio": 6000,
+    "ubicacion": "São Paulo, Brasil",
+    "image": "officesImgs/office3.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Oficina en Ciudad de México",
+    "descripcion": "Amplia oficina en el corazón de Ciudad de México.",
+    "precio": 4800,
+    "ubicacion": "Ciudad de México, México",
+    "image": "officesImgs/office4.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Oficina en Buenos Aires",
+    "descripcion": "Oficina elegante en el centro de Buenos Aires, Argentina.",
+    "precio": 5500,
+    "ubicacion": "Buenos Aires, Argentina",
+    "image": "officesImgs/office5.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Oficina en Santiago",
+    "descripcion": "Espaciosa oficina en el distrito financiero de Santiago, Chile.",
+    "precio": 5200,
+    "ubicacion": "Santiago, Chile",
+    "image": "officesImgs/office6.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Oficina en Lima",
+    "descripcion": "Oficina moderna en el centro de Lima, Perú.",
+    "precio": 4300,
+    "ubicacion": "Lima, Perú",
+    "image": "officesImgs/office7.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Oficina en Río de Janeiro",
+    "descripcion": "Oficina ejecutiva en Río de Janeiro, Brasil.",
+    "precio": 5800,
+    "ubicacion": "Río de Janeiro, Brasil",
+    "image": "officesImgs/office8.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Oficina en Montevideo",
+    "descripcion": "Cómoda oficina en el centro de Montevideo, Uruguay.",
+    "precio": 4600,
+    "ubicacion": "Montevideo, Uruguay",
+    "image": "officesImgs/office9.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Oficina en Quito",
+    "descripcion": "Oficina bien ubicada en Quito, Ecuador.",
+    "precio": 4100,
+    "ubicacion": "Quito, Ecuador",
+    "image": "officesImgs/office10.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Oficina en Caracas",
+    "descripcion": "Amplia oficina en Caracas, Venezuela.",
+    "precio": 4900,
+    "ubicacion": "Caracas, Venezuela",
+    "image": "officesImgs/office11.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Oficina en San José",
+    "descripcion": "Oficina en el centro de San José, Costa Rica.",
+    "precio": 4200,
+    "ubicacion": "San José, Costa Rica",
+    "image": "officesImgs/office12.jpg"
+  }
+]
   

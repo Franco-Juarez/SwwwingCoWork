@@ -9,7 +9,6 @@ import PropertiesSection from './components/PropertiesSection'
 
 function App() {
 
-
   return (
     <div>
       <NavBar />

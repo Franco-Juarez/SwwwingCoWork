@@ -1,4 +1,5 @@
-import { Popover, PopoverTrigger, Button, Portal, PopoverContent, PopoverArrow, PopoverHeader, PopoverCloseButton, PopoverBody } from "@chakra-ui/react";
+import { Popover, PopoverTrigger, Button, Portal, PopoverContent, PopoverArrow, PopoverHeader, PopoverCloseButton, PopoverBody, Icon } from "@chakra-ui/react";
+import { FaFaceGrinBeamSweat } from "react-icons/fa6";
 
 // eslint-disable-next-line react/prop-types
 const PopUpBtn = ( {btnName} ) => {
@@ -10,10 +11,19 @@ const PopUpBtn = ( {btnName} ) => {
       <Portal>
         <PopoverContent>
         <PopoverArrow />
-          <PopoverHeader>Header</PopoverHeader>
+          <PopoverHeader
+          fontFamily={"heading"}
+          >Ups! Este es solo un botón para lucirnos<Icon color={"mainColor"} ml={2} as={FaFaceGrinBeamSweat} /> </PopoverHeader>
           <PopoverCloseButton />
         <PopoverBody>
-          <Button colorScheme='blue'>Button</Button>
+          Si quieres que tu sitio web luzca como este, ¡contáctanos y trabajemos juntos!
+          <Button
+          mt={4} 
+          backgroundColor='mainColor'
+          as={"a"}
+          href="https://swwwing.com.ar"
+          target="_blank"
+          >Escríbenos</Button>
         </PopoverBody>
         </PopoverContent>
       </Portal>

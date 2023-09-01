@@ -21,11 +21,17 @@ const NavBar = () => {
     as={motion.div}
     animation={animation}  
     px={{base:0, lg: 12}} 
-    backgroundColor={"whiteAlpha.400"} 
-    justifyContent={"space-between"}
-    width={"90%"}
-    margin={"0 auto"}
+    backgroundColor={"#FFFFFF"} 
+    position={"sticky"}
+    top={0}
+    zIndex={999}
     >
+      <HStack
+      zIndex={999}
+      width={"90%"}
+      margin={"0 auto"}
+      justifyContent={"space-between"}
+      >
       <a href="/"><Image w={100} src={logo} /></a>
       <HStack 
       gap={4}
@@ -44,10 +50,10 @@ const NavBar = () => {
       backgroundColor={"#FFFFFF"}
       boxShadow={{base: isToggled ? "0 0 0 100vmax rgba(0, 0, 0, .7)" : "none", lg:"none"}}
       >
-        <UnorderedList w={"100%"} m={0}  gap={4} display={{base: isToggled ? 'flex' : 'none', lg:"flex"}} flexDirection={{base:"column", lg:"row"}} alignItems={"center"} fontSize={20}>
-          <ListItem listStyleType={"none"}><a href="#servicios">Servicios</a></ListItem>
-          <ListItem listStyleType={"none"}><a href="#oficinas">Oficinas</a></ListItem>
-          <ListItem listStyleType={"none"}><a href="#blog">Blog</a></ListItem>
+        <UnorderedList w={"100%"} m={0}  gap={8} display={{base: isToggled ? 'flex' : 'none', lg:"flex"}} flexDirection={{base:"column", lg:"row"}} alignItems={"center"} fontSize={20}>
+          <ListItem _hover={{fontWeight:700}} listStyleType={"none"}><a href="#servicios">Servicios</a></ListItem>
+          <ListItem _hover={{fontWeight:700}} listStyleType={"none"}><a href="#oficinas">Oficinas</a></ListItem>
+          <ListItem _hover={{fontWeight:700}} listStyleType={"none"}><a href="#blog">Blog</a></ListItem>
           <PopUpBtn
           btnName="Contacto"
           />
@@ -64,6 +70,7 @@ const NavBar = () => {
           <CloseIcon display ={isToggled ? 'block' : 'none'} />
           <HamburgerIcon display ={isToggled ? 'none' : 'block'}   />
         </Button>
+      </HStack>
       </HStack>
     </HStack>
   )

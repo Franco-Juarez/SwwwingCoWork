@@ -12,18 +12,20 @@ const CallToActionSection = () => {
     p={{base: 4, lg:12}}
     >
       <VStack
+      py={8}
       w={"90%"}
       margin={"0 auto"}
       gap={4} 
       alignItems={{base:"center", lg:"flex-start"}} 
       >
-        <Heading color={"whiteAlpha.900"} w={"75%"} textAlign={{base: "center", lg:"left"}}>Suscríbete a nuestro newsletter</Heading>
+        <Heading color={"whiteAlpha.900"} w={{base:"100%", md:"75%"}} textAlign={{base: "center", lg:"left"}}>Suscríbete a nuestro newsletter</Heading>
         <Text color={"whiteAlpha.900"} textAlign={{base: "center", lg: "left"}} fontSize={"1rem"} w={{base: "100%", md:"60%"}}>Recibe semanalmente en tu email las últimas novedades en materia de Gestión Laboral, junto con los nuevos ingresos de propiedades.</Text>
         <Flex flexDirection={{base: "column", md:"row"}} gap={4}>
           <Input 
           type="email"
-          color='whiteAlpha.900'
-          _placeholder={{ opacity: 1, color: 'whiteAlpha.900' }}
+          color='blackAlpha.900'
+          backgroundColor={"#FFFFFF"}
+          _placeholder={{ opacity: 1, color: 'blackAlpha.900' }}
           focusBorderColor="whiteAlpha.900" 
           placeholder='Email'></Input>
         <PopUpBtn 
