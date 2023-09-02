@@ -2,21 +2,7 @@ import { VStack, HStack, Box, Heading, Grid, Button } from "@chakra-ui/react"
 import PropertiesCards from "./PropertiesCards";
 import properties from "../data/Properties.json";
 import SearchBar from "./SearchBar";
-import { motion } from "framer-motion";
 import { useState } from 'react';
-
-
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.6,
-      staggerChildren: 0.2
-    }
-  }
-};
 
 const PropertiesSection = () => {
 
@@ -33,10 +19,6 @@ const PropertiesSection = () => {
   return (
     <VStack
     py={12}
-    as={motion.div}
-    variants={container}
-    initial="hidden"
-    animate="visible"
     id="oficinas"
     backgroundColor={"blackAlpha.200"}
     >

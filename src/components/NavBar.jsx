@@ -4,7 +4,7 @@ import { useState } from "react";
 import logo from "../assets/logo.png"
 import PopUpBtn from "./PopUpBtn";
 import { keyframes } from '@chakra-ui/react';
-import { motion, transform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const animationKeyframes = keyframes`
   0% { opacity: 0;}
