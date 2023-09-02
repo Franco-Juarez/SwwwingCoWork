@@ -3,6 +3,21 @@ import PropertiesCards from "./PropertiesCards";
 import properties from "../data/Properties.json";
 import SearchBar from "./SearchBar";
 import { useState } from 'react';
+import { motion } from "framer-motion";
+
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.5,
+      staggerChildren: 0.3
+    }
+  }
+};
+
 
 const PropertiesSection = () => {
 
@@ -14,10 +29,12 @@ const PropertiesSection = () => {
     setCard(!card)
     setScroll(!scroll)
   }
-
-
   return (
     <VStack
+    as={motion.div}
+    variants={container}
+    initial="hidden"
+    animate="visible"
     py={12}
     id="oficinas"
     backgroundColor={"blackAlpha.200"}

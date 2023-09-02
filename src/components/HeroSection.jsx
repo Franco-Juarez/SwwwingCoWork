@@ -13,7 +13,8 @@ const animation = `${animationKeyframes} .5s ease-in-out`;
 
 const HeroSection = () => {
   return (
-    <HStack p={{base:2, lg:0}} backgroundPosition={"bottom"} backgroundRepeat={"no-repeat"} backgroundSize={"cover"} backgroundImage={bgImage} width={"100%"} height={"90vh"}>
+    <HStack 
+    p={{base:2, lg:0}} backgroundPosition={"bottom"} backgroundRepeat={"no-repeat"} backgroundSize={"cover"} backgroundImage={bgImage} width={"100%"} height={"90vh"}>
       <VStack 
       as={motion.div}
       animation={animation}

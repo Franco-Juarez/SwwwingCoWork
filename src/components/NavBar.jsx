@@ -24,10 +24,10 @@ const NavBar = () => {
     backgroundColor={"#FFFFFF"} 
     position={"sticky"}
     top={0}
-    zIndex={999}
+    zIndex={10}
     >
       <HStack
-      zIndex={999}
+      zIndex={10}
       width={"90%"}
       margin={"0 auto"}
       justifyContent={"space-between"}

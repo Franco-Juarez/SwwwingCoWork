@@ -1,8 +1,8 @@
 import { HStack, Heading, VStack, Box, Image, Text, Divider, Flex } from "@chakra-ui/react";
 import office1 from "../assets/blogSectionImg/1.jpg"
-import office2 from "../assets/blogSectionImg/2.jpg"
-import office3 from "../assets/blogSectionImg/3.jpg"
-import office4 from "../assets/blogSectionImg/4.jpg"
+import office2 from "../assets/blogSectionImg/2.webp"
+import office3 from "../assets/blogSectionImg/3.webp"
+import office4 from "../assets/blogSectionImg/4.webp"
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 const BlogSection = () => {
