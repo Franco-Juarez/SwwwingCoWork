@@ -16,8 +16,10 @@ const PopUpBtn = ( {btnName} ) => {
           >Ups! Este es solo un botón para lucirnos<Icon color={"mainColor"} ml={2} as={FaFaceGrinBeamSweat} /> </PopoverHeader>
           <PopoverCloseButton />
         <PopoverBody>
-          Si quieres que tu sitio web luzca como este, ¡contáctanos y trabajemos juntos!
+          Si quieres que tu sitio web se vea como este, ¡contáctanos y trabajemos juntos!
           <Button
+          borderRadius={"20px"}
+          _hover={{bg: "blackAlpha.900", color:"whiteAlpha.900"}}
           mt={4} 
           backgroundColor='mainColor'
           as={"a"}

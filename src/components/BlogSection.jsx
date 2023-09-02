@@ -25,7 +25,7 @@ const BlogSection = () => {
       </HStack>
       <HStack flexDirection={{base:"column", lg:"row"}} gap={8} pt={12} w={"100%"} alignItems={"flex-start"} justifyContent={"space-between"}>
         <VStack w={{base:"100%",lg:"50%"}} justifyContent={"space-between"}  alignItems={"flex-start"}> 
-          <Image borderRadius={20} src={office1} alt='House Photo' />
+          <Image loading="lazy" borderRadius={20} src={office1} alt='House Photo' />
           <Flex w={"100%"} justifyContent={"space-between"}>
             <Text>
               Agosto 22, 2023
@@ -41,7 +41,7 @@ const BlogSection = () => {
         </VStack>
         <VStack w={{base:"100%",lg:"50%"}}  gap={3} justifyContent={"space-between"}  alignItems={"flex-start"}>
           <HStack flexDirection={{base:"column", lg:"row"}}  alignItems={"flex-start"}>
-            <Image w={{base:"100%",lg:"30%"}} pr={2} borderRadius={20} src={office2} alt='House Photo' />
+            <Image loading="lazy" w={{base:"100%",lg:"30%"}} pr={2} borderRadius={20} src={office2} alt='House Photo' />
             <Box>
               <Flex w={"100%"} justifyContent={"space-between"}>
                 <Text>
@@ -59,7 +59,7 @@ const BlogSection = () => {
           </HStack>
           <Divider />
           <HStack flexDirection={{base:"column", lg:"row"}} alignItems={"flex-start"}>
-            <Image w={{base:"100%",lg:"30%"}} pr={2} borderRadius={20} src={office3} alt='House Photo' />
+            <Image loading="lazy" w={{base:"100%",lg:"30%"}} pr={2} borderRadius={20} src={office3} alt='House Photo' />
             <Box>
               <Flex w={"100%"} justifyContent={"space-between"}>
                 <Text>
@@ -77,7 +77,7 @@ const BlogSection = () => {
           </HStack>
           <Divider />
           <HStack flexDirection={{base:"column", lg:"row"}} alignItems={"flex-start"}>
-            <Image w={{base:"100%",lg:"30%"}} pr={2} borderRadius={20} src={office4} alt='House Photo' />
+            <Image loading="lazy" w={{base:"100%",lg:"30%"}} pr={2} borderRadius={20} src={office4} alt='House Photo' />
             <Box>
               <Flex w={"100%"} justifyContent={"space-between"}>
                 <Text>

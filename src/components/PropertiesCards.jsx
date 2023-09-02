@@ -21,7 +21,7 @@ const PropertiesCards = ({propertyName, propertyPrice, propertyLocation, propert
     whileTap={{ scale: 0.99}}
     >
       <VStack 
-      minH={{base: "350px", md:"500px"}} 
+      minH={{base: "350px", md:"430px"}} 
       px={4}
       pt={4}
       pb={8} 
@@ -32,16 +32,18 @@ const PropertiesCards = ({propertyName, propertyPrice, propertyLocation, propert
       justifyContent={"space-between"}
       backgroundColor={"whiteAlpha.900"}
       >
-        <Image objectFit={"cover"} w={"100%"} borderRadius={20} src={propertyImage} />
+        <Image objectFit={"cover"} maxH={"200px"} w={"100%"} borderRadius={20} src={propertyImage} />
         <Flex py={2} gap={2}>
           <Button 
           fontSize={".8rem"} 
           borderRadius={20} 
           display={"inline"}
           backgroundColor={"yellow.200"}
+          _hover={{backgroundColor: "yellow.100"}}
           >{propertyLocation}</Button>
           <Button 
           backgroundColor={"yellow.200"}
+          _hover={{backgroundColor: "yellow.100"}}
           fontSize={".8rem"} 
           borderRadius={20} 
           display={"inline"}>Negotiable</Button>

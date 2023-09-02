@@ -5,6 +5,7 @@ import SearchBar from "./SearchBar";
 import { motion } from "framer-motion";
 import { useState } from 'react';
 
+
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -20,23 +21,19 @@ const container = {
 const PropertiesSection = () => {
 
   const [card, setCard] = useState(false);
-  // const cardContainerRef = useRef(null);
+  const [scroll, setScroll] = useState(false);
+
 
   const sumarCards = () => {
     setCard(!card)
+    setScroll(!scroll)
   }
 
-  // useEffect(() => {
-  //   if (!card) {
-  //     cardContainerRef.current.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // }, [card]);
 
   return (
     <VStack
     py={12}
     as={motion.div}
-    // ref={cardContainerRef}
     variants={container}
     initial="hidden"
     animate="visible"
@@ -93,7 +90,7 @@ const PropertiesSection = () => {
         })
       }
     </Grid>
-      <Button 
+      <Button
       onClick={sumarCards} 
       m={"0 auto"}
       _hover={{ bg: 'mainColor' }} 
@@ -103,7 +100,7 @@ const PropertiesSection = () => {
       borderRadius={"20px"} 
       backgroundColor={"blackAlpha.900"}
       >
-        {card ? "Ver menos" : "Ver más"}
+        {!card ? "Ver más" : "Ver menos"}
       </Button>
     </VStack>
     </VStack>

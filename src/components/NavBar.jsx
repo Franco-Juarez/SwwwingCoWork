@@ -4,7 +4,7 @@ import { useState } from "react";
 import logo from "../assets/logo.png"
 import PopUpBtn from "./PopUpBtn";
 import { keyframes } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { motion, transform } from 'framer-motion';
 
 const animationKeyframes = keyframes`
   0% { opacity: 0;}
@@ -51,9 +51,16 @@ const NavBar = () => {
       boxShadow={{base: isToggled ? "0 0 0 100vmax rgba(0, 0, 0, .7)" : "none", lg:"none"}}
       >
         <UnorderedList w={"100%"} m={0}  gap={8} display={{base: isToggled ? 'flex' : 'none', lg:"flex"}} flexDirection={{base:"column", lg:"row"}} alignItems={"center"} fontSize={20}>
-          <ListItem _hover={{fontWeight:700}} listStyleType={"none"}><a href="#servicios">Servicios</a></ListItem>
-          <ListItem _hover={{fontWeight:700}} listStyleType={"none"}><a href="#oficinas">Oficinas</a></ListItem>
-          <ListItem _hover={{fontWeight:700}} listStyleType={"none"}><a href="#blog">Blog</a></ListItem>
+          <ListItem
+          className="hover-underline-animation"
+          listStyleType={"none"} 
+          ><a href="#servicios">Servicios</a></ListItem>
+          <ListItem 
+          className="hover-underline-animation"
+          listStyleType={"none"}><a href="#oficinas">Oficinas</a></ListItem>
+          <ListItem
+          className="hover-underline-animation"
+          listStyleType={"none"}><a href="#blog">Blog</a></ListItem>
           <PopUpBtn
           btnName="Contacto"
           />

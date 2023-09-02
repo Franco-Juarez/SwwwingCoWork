@@ -57,10 +57,16 @@ const Footer = () => {
           <VStack alignItems={{base:"center", lg:"flex-end"}}>
             <UnorderedList gap={2} textAlign={{base: "center", lg:"right"}} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} m={0} listStyleType={"none"}>
               <ListItem>
-              <Link isExternal href="https://goo.gl/maps/EGdadLTqm6g1G4wt5"> Juan Domingo Perón, B8105,<br/> Monte Hermoso, Buenos Aires</Link>
+              <Link
+              _hover={{textDecoration:"none"}}
+              className="hover-underline-animation-footer"
+              isExternal href="https://goo.gl/maps/EGdadLTqm6g1G4wt5"> Juan Domingo Perón, B8105,<br/> Monte Hermoso, Buenos Aires</Link>
               </ListItem>
               <ListItem>
-                <Link isExternal href="mailto:swwwing.ar@gmail.com">swwwing.ar@gmail.com</Link>
+                <Link 
+                _hover={{textDecoration:"none"}}
+                className="hover-underline-animation-footer"
+                isExternal href="mailto:swwwing.ar@gmail.com">swwwing.ar@gmail.com</Link>
               </ListItem>
             </UnorderedList>
             <HStack gap={4} fontSize={"1rem"}>
@@ -69,7 +75,7 @@ const Footer = () => {
               whileHover={{ scale: 1.2}}
               whileTap={{ scale: 0.9}}
               href='https://www.instagram.com/swwwing.ok/' isExternal>
-                <Icon ex  as={BsInstagram} />
+                <Icon as={BsInstagram} />
               </Link>
               <Link
               as={motion.a}
@@ -83,7 +89,10 @@ const Footer = () => {
         </GridItem>
       </Grid>
       <HStack pt={4} justifyContent={"center"} color={"whiteAlpha.900"}>
-        <Link href="https://www.swwwing.com.ar" isExternal>
+        <Link href="https://www.swwwing.com.ar" isExternal
+        _hover={{textDecoration:"none"}}
+        className="hover-underline-animation-footer"
+        >
           <Text fontSize={".8rem"}>
           © Swwwing Agency 2023 - All rights reserved
           </Text>

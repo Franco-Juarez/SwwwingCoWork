@@ -58,7 +58,7 @@
   {
     "id": 8,
     "nombre": "Oficina en Río de Janeiro",
-    "descripcion": "Oficina ejecutiva en Río de Janeiro, Brasil.",
+    "descripcion": "Oficina ejecutiva completamente equipada en Río de Janeiro, Brasil.",
     "precio": 5800,
     "ubicacion": "Río de Janeiro, Brasil",
     "image": "officesImgs/office8.jpg"
